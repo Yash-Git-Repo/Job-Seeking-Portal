@@ -1,0 +1,90 @@
+.navbar {
+  background-color: var(--background-color);
+  color: var(--text-color) ; 
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--text-color); 
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .navbar-menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .navbar-item {
+      margin: 0 1rem;
+
+      .navbar-link {
+        font-size: 1rem;
+        color: var(--text-color); 
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &.submenu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem; 
+
+        .navbar-link {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .navbar-actions {
+    display: flex;
+
+    .navbar-button {
+      background-color:var(--background-color); 
+      color: var(--text-color); 
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 16px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: var(--background-color);
+      }
+    }
+  }
+
+  
+  @media (max-width: 768px) {
+    .navbar-menu {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-item {
+      margin: 0.5rem 0;
+    }
+  }
+}

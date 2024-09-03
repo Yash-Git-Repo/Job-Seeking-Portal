@@ -1,0 +1,49 @@
+// Footer.scss
+
+.footer {
+  background-color:var(--background-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer-left {
+    p {
+      margin: 0;
+      font-size: 0.875rem;
+      color: var(--text-color);
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .footer-heading {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+
+      .social-icon {
+        color:var(--text-color);
+        font-size: 1.5rem;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #007bff;
+        }
+
+        i {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

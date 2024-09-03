@@ -1,0 +1,52 @@
+.job-details {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  height: 76vh;
+  background-image: url("../../assets/bgImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin: 0.5rem 0;
+    color: #555;
+
+    strong {
+      color: #333;
+    }
+  }
+
+  .btn {
+    margin-top: 2rem;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .apply-btn {
+      display: inline-block;
+      width: 50%;
+      padding: 0.75rem 1.5rem;
+      background-color: #6c757d;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #5a6268;
+      }
+    }
+  }
+}

@@ -1,0 +1,112 @@
+.hero-section {
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    height: 500px;
+
+
+    .hero-content {
+      display: flex;
+      gap: 5px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 70%;
+      min-width: 90%;
+
+      .hero-text {
+        text-align: center;
+        width: 50%;
+        padding-right: 2rem;
+
+        h1 {
+          font-size: 2.5rem;
+          color: #050505;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.125rem;
+          color: #050505;
+          margin-bottom: 1.5rem;
+        }
+
+        .hero-button {
+          background-color: var(--background-color);
+          color: white;
+          border: none;
+          padding: 0.75rem 1.5rem;
+          font-size: 1rem;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+
+          &:hover {
+            background-color: #808080;
+          }
+          &:active {
+            background-color: var(--background-color);
+          }
+        }
+      }
+      .hero-img {
+        width: 50%;
+        height: 100%;
+
+        img {
+          max-height: 100%;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .hero-icons {
+      cursor: pointer;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 1rem 0;
+
+      .icon {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        height: 100%;
+        color: #333;
+        transition: color 0.3s, transform 0.3s;
+
+        &:hover {
+          color: var(--background-color);
+          transform: scale(1.1);
+        }
+
+        .icon-text {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: #888;
+          }
+
+          .icon-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #050505;
+          }
+        }
+
+        svg {
+          font-size: 2.2rem;
+          margin-bottom: 0.5rem;
+          transition: color 0.3s;
+        }
+      }
+    }
+  }
