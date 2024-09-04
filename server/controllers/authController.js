@@ -35,7 +35,6 @@ const signUpController = async (req, res) => {
 const loginController = async (req, res) => {
   try {
     const { email, password, role } = req.body;
-    console.log(req.body);
     
     if (!email || !password || !role) {
       return res.send(error(400, "All fields are required"));
