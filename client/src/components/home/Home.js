@@ -16,12 +16,12 @@ function Home() {
       <div className="home-howItWorks">
         <HowItWorks />
       </div>
-      <div className="popular-categories">
+      {/* <div className="popular-categories">
         <PopularCategories />
       </div>
       <div className="popular-companies">
         <PopularCompanies />
-      </div>
+      </div> */}
     </div>
   );
 }
